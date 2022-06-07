@@ -1,11 +1,11 @@
-import UseRefExample2 from "./components/UseRefExample2";
+import UseCallbackExample from "./components/UseCallbackExample";
 
 function App() {
-	return (
-		<div className="container mt-5">
-			<UseRefExample2 />
-		</div>
-	);
+  return (
+    <div className="container mt-5">
+      <UseCallbackExample />
+    </div>
+  );
 }
 
 export default App;

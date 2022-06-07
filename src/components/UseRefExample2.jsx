@@ -12,27 +12,10 @@ function UseRefExample2() {
 		renders.current += 1;
 		prevName.current = name;
 		console.log("prevName from useEffect", prevName.current);
-		setLoading(2);
+		setLoading(0);
 	}, [name]);
 
 	console.log("prevName after useEffect", prevName.current);
-
-	// if (loading) {
-	// 	return <h3>Loading...</h3>;
-	// } else {
-	// 	return (
-	// 		<div>
-	// 			<h1>Renders: {renders.current}</h1>
-	// 			<h2>Prev name state: {prevName.current}</h2>
-	// 			<input
-	// 				type="text"
-	// 				value={name}
-	// 				onChange={(e) => setName(e.target.value)}
-	// 				className="form-control mb-3"
-	// 			/>
-	// 		</div>
-	// 	);
-	// }
 
 	return (
 		<div>
